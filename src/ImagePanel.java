@@ -1,0 +1,20 @@
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.JPanel;
+
+public class ImagePanel extends JPanel{   //gets and draws the image
+	
+	private Image image;
+	
+	public ImagePanel(Image image){
+		this.image = image;
+		setBackground(Color.cyan);
+	}
+	
+	public void paintComponent(Graphics g){
+		g.drawImage(image, 0, 0, this);
+	}
+
+}
